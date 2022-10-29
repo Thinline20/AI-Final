@@ -13,3 +13,22 @@
 
 - Next.js
 - Plotly
+
+## Requirement
+
+[Bazel](https://bazel.build)
+Use [Bazelisk](https://github.com/bazelbuild/bazelisk) for automatic easy installation.
+
+### Bazel Commands
+
+#### Build whole project
+
+```bash
+bazel build //...
+```
+
+#### Build individual subproject
+
+```bash
+bazel build //projects/ProjectName/...
+```
