@@ -17,6 +17,7 @@
 ## Requirement
 
 [Bazel](https://bazel.build)
+
 Use [Bazelisk](https://github.com/bazelbuild/bazelisk) for automatic easy installation.
 
 ### Bazel Commands

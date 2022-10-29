@@ -1,3 +1,7 @@
 {
-    "prettier.configPath": "projects/web/.prettierrc"
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "prettier.configPath": "projects/web/.prettierrc",
+  "files.eol": "\n"
 }
