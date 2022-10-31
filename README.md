@@ -28,8 +28,9 @@ Use [Bazelisk](https://github.com/bazelbuild/bazelisk) for automatic easy instal
 bazel build //...
 ```
 
-#### Build individual subproject
+#### Build individual package
 
 ```bash
-bazel build //projects/ProjectName/...
+bazel build //projects/python
+bazel build //projects/web
 ```
