@@ -1,0 +1,13 @@
+name: ai-final
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scikit-learn
+  - lightgbm
+  - bokeh
+  - fastapi
+  - pip:
+    - finance-datareader
