@@ -1,9 +1,6 @@
-load("@rules_python//python:defs.bzl", "py_binary")
+load("@rules_python//python:defs.bzl", "py_library")
 
-py_binary(
+py_library(
     name = "lib-ai",
-    srcs = ["main.py"],
-    main = "main.py",
-    deps = [
-    ],
+    srcs = ["LibAI.py"]
 )
