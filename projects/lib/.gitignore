@@ -1,0 +1,3 @@
+# finance data files
+data/raw-*.json
+data/raw-*.csv
