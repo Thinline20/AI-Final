@@ -16,10 +16,17 @@ Use [Bazelisk](https://github.com/bazelbuild/bazelisk) for automatic easy instal
 
 ## Project Setup
 
-### Create and activate conda environment
+### Conda
+
+#### Create conda environment
 
 ```bash
 conda env create -f="./environment.yml"
+```
+
+#### activate conda environment
+
+```bash
 conda activate ai-final
 ```
 
@@ -29,15 +36,15 @@ conda activate ai-final
 corepack enable
 ```
 
-### Build project
+## Build project
 
-#### Build whole project
+### Build whole project
 
 ```bash
 bazel build //...
 ```
 
-#### Build individual package
+### Build individual package
 
 ```bash
 bazel build //projects/lib
