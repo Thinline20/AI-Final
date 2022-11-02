@@ -17,8 +17,18 @@
 ## Requirement
 
 [Bazel](https://bazel.build)
-
 Use [Bazelisk](https://github.com/bazelbuild/bazelisk) for automatic easy installation.
+
+[anaconda](https://docs.anaconda.com/anaconda/install/index.html) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) if you don't want full anaconda environment
+
+### Project Setup
+
+#### create and activate conda environment
+
+```bash
+conda env create -f="./environment.yml"
+conda activate ai-final
+```
 
 ### Bazel Commands
 
@@ -31,6 +41,7 @@ bazel build //...
 #### Build individual package
 
 ```bash
-bazel build //projects/python
-bazel build //projects/web
+bazel build //projects/lib
+bazel build //projects/backend
+bazel build //projects/frontend
 ```
