@@ -10,6 +10,7 @@ dependencies:
   - scikit-learn
   - lightgbm
   - bokeh
+  - beautifulsoup4
   - pip:
     - finance-datareader
     - fastapi
