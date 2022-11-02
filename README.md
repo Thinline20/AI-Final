@@ -16,14 +16,15 @@
 
 ## Requirement
 
-[Bazel](https://bazel.build)
+[Bazel](https://bazel.build) 5.3.1
+
 Use [Bazelisk](https://github.com/bazelbuild/bazelisk) for automatic easy installation.
 
 [anaconda](https://docs.anaconda.com/anaconda/install/index.html) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) if you don't want full anaconda environment
 
-### Project Setup
+## Project Setup
 
-#### create and activate conda environment
+### create and activate conda environment
 
 ```bash
 conda env create -f="./environment.yml"
