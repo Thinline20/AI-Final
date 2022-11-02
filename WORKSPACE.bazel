@@ -9,24 +9,34 @@ http_archive(
     url = "https://github.com/bazelbuild/rules_python/archive/refs/tags/0.13.0.tar.gz",
 )
 
-# Conda rules
+# Javascript rules
+# https://github.com/aspect-build/rules_js
 http_archive(
-    name = "rules_conda",
-    sha256 = "...",  # copy from release
-    url = "...",  # copy from release
+    name = "aspect_rules_js",
+    sha256 = "02da7c546cd70751b7375b7e95f7298709f5a33fda2863c2b68dac7745bca66d",
+    strip_prefix = "rules_js-1.6.4",
+    url = "https://github.com/aspect-build/rules_js/archive/refs/tags/v1.6.4.tar.gz",
 )
 
-load("@rules_conda//:defs.bzl", "conda_create", "load_conda", "register_toolchain")
+load("@aspect_rules_js//js:repositories.bzl", "rules_js_dependencies")
 
-load_conda(
-    install_mamba = True,
-    quiet = False,
+rules_js_dependencies()
+
+load("@rules_nodejs//nodejs:repositories.bzl", "DEFAULT_NODE_VERSION", "nodejs_register_toolchains")
+
+nodejs_register_toolchains(
+    name = "nodejs",
+    node_version = DEFAULT_NODE_VERSION,
 )
 
-conda_create(
-    name = "ai-final",
-    environment = "@//:environment.yml",
-    quiet = False,
+load("@aspect_rules_js//npm:npm_import.bzl", "npm_translate_lock")
+
+npm_translate_lock(
+    name = "npm",
+    pnpm_lock = "//:pnpm-lock.yaml",
+    verify_node_modules_ignored = "//:.bazelignore",
 )
 
-register_toolchain(env = "ai-final")
+load("@npm//:repositories.bzl", "npm_repositories")
+
+npm_repositories()
