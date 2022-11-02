@@ -3,5 +3,7 @@
     "editor.tabSize": 4
   },
   "prettier.configPath": "projects/frontend/.prettierrc",
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "120"]
 }
