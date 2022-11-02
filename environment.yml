@@ -11,6 +11,7 @@ dependencies:
   - lightgbm
   - bokeh
   - beautifulsoup4
+  - black
   - pip:
     - finance-datareader
     - fastapi
