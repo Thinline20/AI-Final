@@ -1,3 +1,4 @@
 # finance data files
-data/raw-*.json
-data/raw-*.csv
+data/
+
+__pycache__/
