@@ -12,6 +12,8 @@ Use [Bazelisk](https://github.com/bazelbuild/bazelisk) for automatic easy instal
 
 [anaconda](https://docs.anaconda.com/anaconda/install/index.html) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) if you don't want full anaconda environment
 
+You can use [Mamba](https://github.com/mamba-org/mamba), a drop in replacement for conda, which is faster and more efficient than conda.
+
 ### node.js
 
 [node.js](https://nodejs.org/)
@@ -22,6 +24,14 @@ Use [Bazelisk](https://github.com/bazelbuild/bazelisk) for automatic easy instal
 
 ```bash
 conda env create -f="./environment.yml"
+conda activate ai-final
+```
+
+#### With Mamba
+
+```bash
+conda install mamba -c conda-forge
+mamba env create -f="./environment.yml"
 conda activate ai-final
 ```
 
