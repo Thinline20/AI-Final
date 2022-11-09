@@ -22,6 +22,8 @@ You can use [Mamba](https://github.com/mamba-org/mamba), a drop in replacement f
 
 ### Create and activate conda environment
 
+#### With Anaconda or Miniconda
+
 ```bash
 conda env create -f="./environment.yml"
 conda activate ai-final
@@ -29,8 +31,17 @@ conda activate ai-final
 
 #### With Mamba
 
+Install mamba if you already have conda installed on your machine
+
 ```bash
 conda install mamba -c conda-forge
+```
+
+Alternatively, you can install [micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) which is still at early stage, but it generally works fine for me. Refer to [mamba installation page](https://mamba.readthedocs.io/en/latest/installation.html#installation) for the installation process for your environment.
+
+Next, create and activate conda virtual environment.
+
+```bash
 mamba env create -f="./environment.yml"
 conda activate ai-final
 ```
