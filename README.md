@@ -31,7 +31,7 @@ conda activate ai-final
 
 #### With Mamba
 
-Install mamba if you already have conda installed on your machine
+Install mamba with conda if you already have conda installed on your machine
 
 ```bash
 conda install mamba -c conda-forge
