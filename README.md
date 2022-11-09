@@ -8,6 +8,8 @@
 
 Use [Bazelisk](https://github.com/bazelbuild/bazelisk) for automatic easy installation.
 
+### Conda
+
 [anaconda](https://docs.anaconda.com/anaconda/install/index.html) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) if you don't want full anaconda environment
 
 ### node.js
@@ -16,17 +18,10 @@ Use [Bazelisk](https://github.com/bazelbuild/bazelisk) for automatic easy instal
 
 ## Project Setup
 
-### Conda
-
-#### Create conda environment
+### Create and activate conda environment
 
 ```bash
 conda env create -f="./environment.yml"
-```
-
-#### activate conda environment
-
-```bash
 conda activate ai-final
 ```
 
@@ -47,7 +42,21 @@ bazel build //...
 ### Build individual package
 
 ```bash
-bazel build //projects/lib
-bazel build //projects/backend
-bazel build //projects/frontend
+bazel build //projects/lib:ai-lib
+bazel build //projects/backend:backend
+bazel build //projects/frontend:frontend
 ```
+
+## Run project
+
+```bash
+bazel run //projects/backend:backend
+```
+
+Open another terminal and run command below
+
+```bash
+bazel run //projects/frontend:frontend
+```
+
+Now, you're good to go
