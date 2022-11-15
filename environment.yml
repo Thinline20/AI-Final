@@ -13,7 +13,7 @@ dependencies:
   - beautifulsoup4
   - black
   - matplotlib
-  - plotly
+  - mplfinance
   - jupyter
   - pip:
     - finance-datareader
