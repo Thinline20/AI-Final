@@ -12,6 +12,9 @@ dependencies:
   - bokeh
   - beautifulsoup4
   - black
+  - matplotlib
+  - plotly
+  - jupyter
   - pip:
     - finance-datareader
     - fastapi
