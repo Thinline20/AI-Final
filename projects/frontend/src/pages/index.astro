@@ -1,5 +1,7 @@
 ---
 import Layout from "$layouts/Layout.astro";
+
+import Plot from "$components/Plot";
 ---
 
 <Layout title="주식 가격 예측">
@@ -8,5 +10,7 @@ import Layout from "$layouts/Layout.astro";
       <h1>Hello World!</h1>
     </div>
   </div>
-  <main class="flex justify-center">Hello</main>
+  <main class="flex justify-center">
+    <Plot client:load />
+  </main>
 </Layout>
