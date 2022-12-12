@@ -54,7 +54,7 @@ corepack enable
 
 ## Build project
 
-### Build whole project
+### Build whole project (Not Working yet)
 
 ```bash
 bazel build //...
@@ -65,7 +65,7 @@ bazel build //...
 ```bash
 bazel build //projects/lib:ai-lib
 bazel build //projects/backend:backend
-bazel build //projects/frontend:frontend
+bazel build //projects/frontend:frontend (Not Working yet)
 ```
 
 ## Run project
@@ -77,7 +77,7 @@ bazel run //projects/backend:backend
 Open another terminal and run command below
 
 ```bash
-bazel run //projects/frontend:frontend
+bazel run //projects/frontend:frontend (Not Working yet)
 ```
 
 Now, you're good to go
